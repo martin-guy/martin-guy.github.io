@@ -9,7 +9,7 @@
     <meta name="author" content="Tehelka">
 
 
-    <title>Portfolio - [WIP] Roguelike RPG Dungeon Crawler </title>
+    <title>Portfolio - [WIP] Diabolike RPG (Unity) </title>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/default.min.css">
@@ -67,18 +67,14 @@
     
 
         <div class="logo-project">
-            <h1>[WIP] Roguelike RPG Dungeon Crawler</h1>
-            <!-- <img src="/images/games/backstage-musician/banner.png" alt="Project's logo." class="logo logo-xl" />          -->
-            
+            <h1>[WIP] Diablolike RPG (Unity)</h1>            
            </p>
          </div>
 
          <div class="preview">
-            <!-- <img src="/images/projects/phd/trial_questionnaire_normal.mp4" alt="Avatar Embodiment Preview" class="img-fluid" /><br/> -->
             <!-- Video at 50% size -->
-            
             <video class="img-fluid preview-floating" controls preload="none" autoplay muted loop style="height: 20%;">
-              <source src="/images/games/human-vs-orc-godot/thumbnail.mp4" type="video/mp4" />
+              <source src="/images/games/diablolike-rpg-unity/fireball.mp4" type="video/mp4" />
             </video><br />
           </div>
 
@@ -86,7 +82,7 @@
     <div clas="container">
 
     <p class="lead">
-        This game is a roguelike RPG dungeon crawler made with Godot. It is still a work in progress, but the core gameplay is already implemented.
+        This game is a diablolike RPG made with Unity. As of now, it is evolving as a playground to test different features and gameplay mechanics for an RPG, and practicing Unity. I take care to have a robust and modular code architecture, so that new features and mechanics can easily be added. It is not meant to be a full game, as the scope is way too big for a solo developer.
     </p>
 
     <!-- Highlights -->
@@ -109,23 +105,35 @@
 
 
     <h2>Features</h2>
-    <p>Many features implemented stem from the <a href="/pages/other-projects/human-vs-orc.html">Human VS Orc</a> C++ project I made, with the goal of having a modular RPG code architecture.</p>
 
     <p>Currenly implemented features are:</p>
 
     <ul>
-        <li>Unit attributes;</li>
-        <li>Equipment and usable items;</li>
-        <li>Skills, buff/de-buff and status effects;</li>
-        <li>Turn-based combat;</li>
-        <li>Loot and inventory;</li>
-        <li>Zone progression.</li>
-        
+        <li>Core combat;</li>
+        <li>Basic point-and-click Diablo-like movement;</li>
+        <li>AI wandering, patroling and attacking;
+          <ul>
+            <li>Editor gizmos for easy debugging and setups;</li>
+          </ul>
+
+        </li>
+        <li>Basic Cinemachine cutscene;</li>
+        <li>Saving/loading system (using JSON) and scene management;</li>
+        <li>Basic stats and leveling / XP progression;</li>
+        <li>Pickable weapons with different attacks (sword, bow, fireball).</li>        
     </ul>
 
-    <p>This game may be published on Steam and the Play Store in the future.
+    <p>Features to be implemented :</p>
 
-    </p>
+    <ul>
+      <li>Inventory system;</li>
+      <li>Shop;</li>
+      <li>Dialogues;</li>
+      <li>Quest system;</li>
+      <li>More complex AI behaviour;</li>
+      <li>Spells and abilities.</li>
+    </ul>
+
 
     
     <!-- Div clearing the floating image -->
@@ -135,23 +143,34 @@
 
     <div class="screenshots">
         <div class="row">
-           <div class="col-lg-4">
-              <img class="img-fluid project-screenshot" src="/images/games/human-vs-orc-godot/battle-and-skill.png" alt="Game preview of the battle and skill system." />
-              <i>Fight against an enemy. Player has different skills to choose from.                 
+           <div class="col-lg-6">
+            <video class="img-fluid preview-floating" controls preload="none" autoplay muted loop>
+              <source src="/images/games/diablolike-rpg-unity/bow_shoot.mp4" type="video/mp4" />
+            </video>
+              <i>Fight against an enemy with a bow.               
               </i>
            </div>
            
-           <div class="col-lg-4">
-            <img class="img-fluid project-screenshot" src="/images/games/human-vs-orc-godot/character-sheet.png" alt="Character sheet showing equipement, inventory and player stats." />
-              <i>Character sheet showing equipement, inventory and player stats.</i>
-         </div>
+           <div class="col-lg-6">
+            <video class="img-fluid preview-floating" controls preload="none" autoplay muted loop>
+              <source src="/images/games/diablolike-rpg-unity/sword_combat.mp4" type="video/mp4" />
+            </video>
+              <i>Fight against an enemy using a sword.                 
+              </i>
+           </div>
 
-         <div class="col-lg-4">
-            <img class="img-fluid project-screenshot" src="/images/games/human-vs-orc-godot/inventory-equip.png" alt="Items can be equipped and give bonuses to the player." />
-              <i>Items can be equipped and give bonuses to the player.</i>
-         </div>
+           
         </div>
         
+        <div class="row">
+          <div class="col-lg-6">
+            <video class="img-fluid preview-floating" controls preload="none" autoplay muted loop>
+              <source src="/images/games/diablolike-rpg-unity/item_picking.mp4" type="video/mp4" />
+            </video>
+              <i>Weapons can be picked up and used. There are bows, swords and a fireball spell (represented by a pumpkin for now).                 
+              </i>
+           </div>
+        </div>
         
      </div>
 
